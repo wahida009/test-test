@@ -1,0 +1,207 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<title>Home</title>
+</head>
+<body>
+<div class="navbar">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"><img src="kanta.png"</i></button>
+    </form>
+  </div>
+  <img src="logo.jpg" align="left">
+  <a class="active" href="index.html">Home</a>
+  <div class="dropdown">
+  <button class="dropbtn" href="about.html" style>About Us
+      <i class="fa fa-caret-down"></i> 
+    </button>
+    <div class="dropdown-content">
+    <a href="about.html">Khasaf.Co</a>
+      <a href="background.html">Handcrafted Soap</a>
+      <a href="operation.html">Operation Hours</a>
+    </div>
+  </div>
+<div class="dropdown">
+    <button class="dropbtn" href="product.html">Product
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cart.html">Types of soap</a>
+      <a href="types.html">Soap of the month</a>
+      <a href="orders.html">How to order</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </div>
+ 
+ <a href="gifts.html">Gifts</a>
+ <a href="feedbacks.html">Feedbacks</a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="banner1.jpg" style="width:100%">
+</div>
+  </div>
+<div class="mySlides fade">
+  <img src="banner2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="banner3.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<center><font face="gabriola"><h1>#NATURECOMESFIRST</h1></font></center>
+<pre></pre>
+<center>
+<video width="427" height="240" controls>
+  <source src="productvd.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</center>
+<br>  
+<div class="column">
+   <div class="row">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="a8.png" alt="soap" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>MARBLE SERIES</h1>
+      <pre>Suitable for normal skin</pre>
+      <p>Contains flower extracts</p>
+    </div>
+  </div>
+</div>
+  <div class="row">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="b5.jpg" alt="soap" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>CHEERFUL SERIES</h1>
+      <pre>Suitable for everyone</pre>
+      <p>Contains goat milk and rice extracts</p>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="row">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="c3.png" alt="soap" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>LUXURIOUS SERIES</h1>
+      <pre>Suitable for normal skin and dry skin</pre>
+      <p>Contains essential oils</p>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="row">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="d1.png" alt="soap" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>NATURE SERIES</h1>
+      <pre>Suitable for sensitive skin</pre>
+      <p>99% from Fruit Extracts</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<center>
+<form action="action_page.php">
+<font color="F4F0E7">
+  <div class="container" style="background-color:#765129">
+    <h2>Subscribe to our Handcrafted Soap</h2>
+    <p>Lets subscribe! There are many soap scents are waiting for you</p>
+  </div>
+</font>
+</center>
+<center>
+  <div class="container" style="background-color:F4F0E7">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+<br>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Confirm
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</center>
+</form>
+
+ <!-- hitwebcounter Code START -->
+<center><a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7833474&style=0025&nbdigits=5&type=page&initCount=0" 
+title="Free Counter" Alt="web counter"   border="0" /></a></center>
+
+<div class="footer">
+  <p>Khasaf Official</p>
+  <p><a href="about.html">About</a></p>
+  <p><a href="contact.html">Contact</a></p>
+<br>
+<h>Buy Handcrafted Soap</h>
+ <p><a href="cart.html">Products</a></p>
+<br>
+<p>Help</p>
+  <p><a href="faq.html">FAQ</a></p>
+</footer>
+
+</body>
+</html>
